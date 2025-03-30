@@ -20,7 +20,7 @@ This module displays the overall compliance status using a pie chart. It's a mic
 3.  **Start the development server:**
 
     ```bash
-    npm start
+    npm run dev
     ```
 
     The module will be available at `http://localhost:3002`.
