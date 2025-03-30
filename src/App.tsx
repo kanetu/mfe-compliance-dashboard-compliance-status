@@ -1,11 +1,9 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
-import "./styles/index.css";
-
 Chart.register(ArcElement, Tooltip, Legend);
 
-const App = () => {
+const App: React.FC = () => {
   const data = {
     labels: ["Completed", "Pending", "Overdue"],
     datasets: [
@@ -18,8 +16,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h2 className="font-bold text-[42px]">Compliance Status</h2>
+    <div className="bg-white rounded p-4 font-bold">
+      <h2 className="text-lg font-semibold mb-4">Compliance Status</h2>
       <Pie data={data} />
     </div>
   );
