@@ -3,7 +3,7 @@ import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 Chart.register(ArcElement, Tooltip, Legend);
 
-const ComplianceStatus = () => {
+const App = () => {
   const data = {
     labels: ["Completed", "Pending", "Overdue"],
     datasets: [
@@ -17,10 +17,10 @@ const ComplianceStatus = () => {
 
   return (
     <div>
-      <h2>Compliance Status</h2>
+      <h2 className="font-bold text-[72px]">Compliance Status</h2>
       <Pie data={data} />
     </div>
   );
 };
 
-export default ComplianceStatus;
+export default App;
