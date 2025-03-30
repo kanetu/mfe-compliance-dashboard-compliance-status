@@ -45,6 +45,7 @@ This module displays the overall compliance status using a pie chart. It's a mic
 - Chart.js and React Chart.js 2
 - Webpack and Module Federation plugins
 - Tailwind CSS
+- ChartJS
 
 ## Notes
 
