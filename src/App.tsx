@@ -1,6 +1,8 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
+import "./styles/index.css";
+
 Chart.register(ArcElement, Tooltip, Legend);
 
 const App = () => {
@@ -17,7 +19,7 @@ const App = () => {
 
   return (
     <div>
-      <h2 className="font-bold text-[72px]">Compliance Status</h2>
+      <h2 className="font-bold text-[42px]">Compliance Status</h2>
       <Pie data={data} />
     </div>
   );
